@@ -20,4 +20,16 @@ string[] ShortArray(string[] array)
 			Array.Resize(ref result, count);
 			
 			return result;
+	}
+    void PrintArray(string[] array)
+	{
+		if(array.Length == 0)
+		{
+			Console.WriteLine("Соответсвующего элемента массива не существует");
 		}
+		else
+		{
+			Array.ForEach(array, (str) => Console.Write($"{str} "));
+			Console.WriteLine();
+		}
+	}
