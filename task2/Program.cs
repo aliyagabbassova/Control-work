@@ -33,3 +33,12 @@ string[] ShortArray(string[] array)
 			Console.WriteLine();
 		}
 	}
+    void PrintTask(string[] array)
+{
+	Console.WriteLine("Дан массив:");
+	PrintArray(array);
+	string[] newArray = ShortArray(array);
+	Console.WriteLine($"Длина строки элемента должна быть меньше или равна {maxlength}");
+	PrintArray(newArray);
+	Console.WriteLine();
+}
