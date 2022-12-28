@@ -11,3 +11,13 @@ string[] ShortArray(string[] array)
 	int count = 0;
 		for (int i = 0; i < length; i++)
 		{
+			if(array[i].Length <= maxlength)
+			{
+				result[count] = array[i];
+				count++;
+			}
+		}
+			Array.Resize(ref result, count);
+			
+			return result;
+		}
