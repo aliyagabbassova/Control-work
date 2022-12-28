@@ -42,3 +42,7 @@ string[] ShortArray(string[] array)
 	PrintArray(newArray);
 	Console.WriteLine();
 }
+	
+PrintTask(array1);
+PrintTask(array2);
+PrintTask(array3);
